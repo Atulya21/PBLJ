@@ -1,0 +1,26 @@
+package Practice2;
+import java.util.*;
+import java.util.Scanner;
+
+
+public class partA {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        ArrayList<String> list = new ArrayList<>();
+        
+        for(int i=0;i<3;i++){
+            String strNum = sc.nextLine();
+            list.add(strNum);
+
+        }
+
+        System.out.println(list);
+        int sum=0;
+        for(String valString : list){
+            sum += Integer.parseInt(valString);
+        }
+        System.out.println(sum);
+        sc.close();
+    }
+    
+}
